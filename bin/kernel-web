@@ -1,0 +1,74 @@
+#!/usr/bin/ruby
+
+kernel_source = "/srv/kbuild/kernel-source.git"
+kernel_livepatch = "/srv/kbuild/kgraft-patches.git"
+
+def usage
+  puts "usage: kernel-web SUSE|openSUSE <output directory>"
+  exit 1
+end
+
+
+def branches_with_flag flag
+  branches = []
+  File.open("branches.conf", "rb"){|f|
+    f.each_line{|l|
+      branch, _ , flags = l.chomp.partition ":"
+      next if branch.length < 1
+      next if branch =~ /#/
+      flags, _ = flags.partition "#"
+      flags = flags.split /[[:space:]]+/
+      branches.push branch if flags.include? flag
+    }
+  }
+  branches
+end
+
+branches = branches_with_flag "publish"
+
+upstream = %w(linux-next vanilla)
+opensuse = %w(master stable) + branches.select{|b| b =~ /^openSUSE/}.sort.reverse
+sle = branches.select{|b| b =~ /^SLE1[0-9](-SP[0-9])?$/}.sort.reverse
+sle_add = (branches-sle).select{|b| b =~ /^SLE1[0-9](-SP[0-9])?/}.sort.reverse
+
+branches = upstream + opensuse + sle + sle_add
+
+all_livepatches = `git ls-remote #{kernel_livepatch}`.lines.select{|l| l =~ %r,^[0-9a-f]{40}\trefs/heads/.*_Update_[0-9]+$,}.map{|l| l.chomp.sub(%r,^[0-9a-f]{40}\trefs/heads/,,"")}
+
+branch_entry = '<li><a href="@branch@.html">@branch@</a></li>'
+
+title = '@open@SUSE Kernel Resources'
+
+branch_title = '@branch@ Kernel Branch'
+
+open = ''
+open = 'open' if ARGV[0] == 'openSUSE'
+usage if open != open && ARGV[0] != 'SUSE'
+usage if ARGV.length != 2
+output = ARGV[1]
+
+tmpl = File.read("kernel-web/#{open}SUSE.html")
+tmpl = tmpl.gsub("@opensuse@", opensuse.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
+tmpl = tmpl.gsub("@upstream@", upstream.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
+tmpl = tmpl.gsub("@sle_add@", sle_add.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
+tmpl = tmpl.gsub("@sle@", sle.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
+
+content = File.read("kernel-web/index-content")
+
+File.write "#{output}/index.html", tmpl.gsub("@content@", content).gsub("@title@",title).gsub("@open@", open)
+
+content = File.read("kernel-web/branch-content")
+
+branches.each{|b|
+  repo = b
+  repo = 'HEAD' if b == 'master'
+  livepatches = all_livepatches.select{|l| l =~ /^#{b}_Update_/}.sort{|a,b| b.sub(/^.*_Update_/,"").to_i <=> a.sub(/^.*_Update_/,"").to_i}
+  if livepatches.length > 0 then
+    livepatches = "<h2>live patches</h2><p> Sources of kernel live patch updates " +
+      livepatches.map{|l| "<a href=\"https://github.com/SUSE/kernel-livepatch/tree/#{l}\">#{l}</a>" }.join(" ") + "</p>"
+  else
+    livepatches = ''
+  end
+  branchinfo = "<p>" + `git --git-dir #{kernel_source} show #{b}:README.BRANCH`.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+b+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
+  File.write "#{output}/#{b}.html", tmpl.gsub("@content@", content).gsub("@title@",branch_title).gsub("@open@", open).gsub("@branch@", b).gsub("@repo@", repo).gsub("@livepatches@",livepatches).gsub("@branchinfo@", branchinfo)
+}
