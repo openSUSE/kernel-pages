@@ -24,6 +24,13 @@ def branches_with_flag flag
   branches
 end
 
+def expand_template tmpl, hash
+  hash.keys.each{|k|
+    tmpl = tmpl.gsub(/@#{k}@/,hash[k])
+  }
+  tmpl
+end
+
 branches = branches_with_flag "publish"
 
 upstream = %w(linux-next vanilla)
@@ -47,15 +54,20 @@ usage if open != open && ARGV[0] != 'SUSE'
 usage if ARGV.length != 2
 output = ARGV[1]
 
-tmpl = File.read("kernel-web/#{open}SUSE.html")
-tmpl = tmpl.gsub("@opensuse@", opensuse.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
-tmpl = tmpl.gsub("@upstream@", upstream.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
-tmpl = tmpl.gsub("@sle_add@", sle_add.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
-tmpl = tmpl.gsub("@sle@", sle.map{|b| branch_entry.gsub("@branch@", b)}.join("\n"))
+tmpl = expand_template(File.read("kernel-web/#{open}SUSE.html"), {
+  "opensuse" =>  opensuse.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
+  "upstream" => upstream.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
+  "sle_add" => sle_add.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
+  "sle" => sle.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
+})
 
 content = File.read("kernel-web/index-content")
 
-File.write "#{output}/index.html", tmpl.gsub("@content@", content).gsub("@title@",title).gsub("@open@", open)
+File.write "#{output}/index.html", expand_template(tmpl, {
+  "content" => content,
+  "title" => title,
+  "open" => open
+})
 
 content = File.read("kernel-web/branch-content")
 
@@ -70,5 +82,13 @@ branches.each{|b|
     livepatches = ''
   end
   branchinfo = "<p>" + `git --git-dir #{kernel_source} show #{b}:README.BRANCH`.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+b+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
-  File.write "#{output}/#{b}.html", tmpl.gsub("@content@", content).gsub("@title@",branch_title).gsub("@open@", open).gsub("@branch@", b).gsub("@repo@", repo).gsub("@livepatches@",livepatches).gsub("@branchinfo@", branchinfo)
+  File.write "#{output}/#{b}.html", expand_template(tmpl, {
+    "content" => content,
+    "title" => branch_title,
+    "open" => open,
+    "branch" => b,
+    "repo" => repo,
+    "livepatches" => livepatches,
+    "branchinfo" => branchinfo,
+  })
 }
