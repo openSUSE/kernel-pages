@@ -41,8 +41,14 @@ sle_add = (branches-sle).select{|b| b =~ /^SLE1[0-9](-SP[0-9])?/}.sort.reverse
 branches = upstream + opensuse + sle + sle_add
 
 all_livepatches = `git ls-remote #{kernel_livepatch}`.lines.select{|l| l =~ %r,^[0-9a-f]{40}\trefs/heads/.*_Update_[0-9]+$,}.map{|l| l.chomp.sub(%r,^[0-9a-f]{40}\trefs/heads/,,"")}
+branch_livepatches = {}
+branches.each{|b|
+  livepatches = all_livepatches.select{|l| l =~ /^#{b}_Update_/}.sort{|a,b| b.sub(/^.*_Update_/,"").to_i <=> a.sub(/^.*_Update_/,"").to_i}
+  branch_livepatches[b] = livepatches if livepatches.length > 0
+}
 
 branch_entry = '<li><a href="@branch@.html">@branch@</a></li>'
+branch_lp_entry = '<li><a href="@branch@-lp.html">@branch@</a></li>'
 
 title = '@open@SUSE Kernel Resources'
 
@@ -59,6 +65,7 @@ tmpl = expand_template(File.read("kernel-web/#{open}SUSE.html"), {
   "upstream" => upstream.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
   "sle_add" => sle_add.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
   "sle" => sle.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
+  "lp_branches" => branch_livepatches.keys.map{|b| expand_template(branch_lp_entry, {"branch" => b})}.join("\n"),
 })
 
 content = File.read("kernel-web/index-content")
@@ -70,17 +77,13 @@ File.write "#{output}/index.html", expand_template(tmpl, {
 })
 
 content = File.read("kernel-web/branch-content")
+lp_content = File.read("kernel-web/livepatch-content")
 
 branches.each{|b|
   repo = b
   repo = 'HEAD' if b == 'master'
-  livepatches = all_livepatches.select{|l| l =~ /^#{b}_Update_/}.sort{|a,b| b.sub(/^.*_Update_/,"").to_i <=> a.sub(/^.*_Update_/,"").to_i}
-  if livepatches.length > 0 then
-    livepatches = "<h2>live patches</h2><p> Sources of kernel live patch updates " +
-      livepatches.map{|l| "<a href=\"https://github.com/SUSE/kernel-livepatch/tree/#{l}\">#{l}</a>" }.join(" ") + "</p>"
-  else
-    livepatches = ''
-  end
+  livepatches = "<h2>live patches</h2><p> Sources of kernel live patch updates " +
+    branch_livepatches[b].map{|l| "<a href=\"https://github.com/SUSE/kernel-livepatch/tree/#{l}\">#{l}</a>" }.join(" ") + "</p>" rescue ''
   branchinfo = "<p>" + `git --git-dir #{kernel_source} show #{b}:README.BRANCH`.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+b+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
   File.write "#{output}/#{b}.html", expand_template(tmpl, {
     "content" => content,
@@ -91,4 +94,12 @@ branches.each{|b|
     "livepatches" => livepatches,
     "branchinfo" => branchinfo,
   })
+  File.write "#{output}/#{b}-lp.html", expand_template(tmpl, {
+    "content" => lp_content,
+    "title" => "Live Patches for " + branch_title,
+    "open" => open,
+    "branch" => b,
+    "livepatches" => livepatches,
+    "branchinfo" => "",
+  }) if branch_livepatches[b]
 }
