@@ -31,6 +31,22 @@ def expand_template tmpl, hash
   tmpl
 end
 
+def get_branchinfo repo, branch
+  cmd=%W(git --git-dir #{repo} show #{branch}:README.BRANCH)
+  stdin, inpipe = IO.pipe
+  outpipe, stdout= IO.pipe
+  errpipe, stderr= IO.pipe
+  pid = spawn(*cmd, :err=>stderr, :out=>stdout, :in=>stdin, :close_others=>true)
+  [stdin, stdout, stderr].each{|fd| fd.close}
+  out = ''
+  err = ''
+  threads = [ Thread.new{ out = outpipe.read }, Thread.new{ err = errpipe.read } ]
+  Process.waitpid pid, 0 rescue nil
+  threads.each{|t|t.join}
+  return "" if $? != 0
+  "<p>" + out.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+branch+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
+end
+
 branches = branches_with_flag "publish"
 
 upstream = %w(linux-next vanilla)
@@ -84,7 +100,6 @@ branches.each{|b|
   repo = 'HEAD' if b == 'master'
   livepatches = "<h2>live patches</h2><p> Sources of kernel live patch updates " +
     branch_livepatches[b].map{|l| "<a href=\"https://github.com/SUSE/kernel-livepatch/tree/#{l}\">#{l}</a>" }.join(" ") + "</p>" rescue ''
-  branchinfo = "<p>" + `git --git-dir #{kernel_source} show #{b}:README.BRANCH`.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+b+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
   File.write "#{output}/#{b}.html", expand_template(tmpl, {
     "content" => content,
     "title" => branch_title,
@@ -92,7 +107,7 @@ branches.each{|b|
     "branch" => b,
     "repo" => repo,
     "livepatches" => livepatches,
-    "branchinfo" => branchinfo,
+    "branchinfo" => get_branchinfo(kernel_source, b),
   })
   File.write "#{output}/#{b}-lp.html", expand_template(tmpl, {
     "content" => lp_content,
@@ -100,6 +115,6 @@ branches.each{|b|
     "open" => open,
     "branch" => b,
     "livepatches" => livepatches,
-    "branchinfo" => "",
+    "branchinfo" => get_branchinfo(kernel_livepatch, branch_livepatches[b][0]),
   }) if branch_livepatches[b]
 }
