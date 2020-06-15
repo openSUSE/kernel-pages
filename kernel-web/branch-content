@@ -2,7 +2,7 @@
                     @branchinfo@
 
                     </p>
-                    <h2>packages</h2>
+                    <a href="https://download.opensuse.org/repositories/Kernel:/@repo@"><h2>packages</h2></a>
                     <p>To install <a href="https://download.opensuse.org/repositories/Kernel:/@repo@">prebuilt kernel</a> from this branch run</p>
                     <pre>
 zypper ar -f https://download.opensuse.org/repositories/Kernel:/@repo@/standard \
@@ -17,7 +17,7 @@ zypper in --from Kernel:@repo@ kernel-default
                     installing ancient kernels on the latest distributions is
                     asking for trouble. Same goes for the opposite case, e.g.
                     installing the Factory kernel on SLES 9.</p>
-                    <h2>kernel-source.git</h2>
+                    <a href="https://github.com/@open@SUSE/kernel-source/tree/@branch@"><h2>kernel-source.git</h2></a>
 <p>There are two SUSE Kernel repositories. Development happens in the
 <a href="https://github.com/@open@SUSE/kernel-source/tree/@branch@">kernel-source</a>
 git repository. This tree is a quile-like series of patches against the
@@ -25,7 +25,7 @@ upstream kernel, plus spec files and various scripts. You can clone it with
 </p>
 
 <pre>git clone https://github.com/@open@SUSE/kernel-source -b @branch@</pre>
-<h2>kernel.git</h2>
+<a href="https://github.com/@open@SUSE/kernel/tree/@branch@"><h2>kernel.git</h2></a>
 <p> If you just want to hack on the sources and do not need to package the
 kernel, use the <a href="https://github.com/@open@SUSE/kernel/tree/@branch@">kernel</a>
 git repository. This one has the same layout as the upstream kernel. Clone
