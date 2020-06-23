@@ -94,6 +94,9 @@ File.write "#{output}/index.html", expand_template(tmpl, {
 
 content = File.read("kernel-web/branch-content")
 lp_content = File.read("kernel-web/livepatch-content")
+redirect = File.read("kernel-web/redirect.html")
+
+Dir.mkdir("#{output}/branches") unless File.exists?("#{output}/branches")
 
 branches.each{|b|
   repo = b
@@ -108,6 +111,10 @@ branches.each{|b|
     "repo" => repo,
     "livepatches" => livepatches,
     "branchinfo" => get_branchinfo(kernel_source, b),
+  })
+  Dir.mkdir("#{output}/branches/#{b}") unless File.exists?("#{output}/branches/#{b}")
+  File.write "#{output}/branches/#{b}/index.html", expand_template(redirect, {
+    "branch" => b,
   })
   File.write "#{output}/#{b}-lp.html", expand_template(tmpl, {
     "content" => lp_content,
