@@ -7,7 +7,7 @@
 .ui-oo-content-wrapper .ui-oo-box-shadow > * > a > h2,.content-wrapper .box-shadow > * > a > h2{margin-top:1.8em;margin-bottom:0.7em;}
             </style>
             <link rel="icon" type="image/png" href="https://static.opensuse.org/themes/bento/images/favicon.png">
-            <title>SLE15-SP1-AZURE Kernel Branch</title>
+            <title>SLE15-SP3 Kernel Branch</title>
     </head>
     <body>
         <div id="content" class="container_16 content-wrapper">
@@ -58,13 +58,14 @@
             <div class="box box-shadow grid_12 clearfix">
                 <div class="grid_12 alpha omega row_30">
 
-                                        <h1>SLE15-SP1-AZURE</h1>
-                    <p>This is the SLE15 SP1 AZURE kernel branch.
+                                        <h1>SLE15-SP3</h1>
+                    <p>This is the SLE15 SP2 kernel branch.
 </p><p>
 The persons in charge of this branch are:
-        Olaf Hering &lt;<a href="mailto:ohering@suse.de?subject=SLE15-SP1-AZURE%20branch">ohering@suse.de</a>&gt;
+	Michal Kubecek &lt;<a href="mailto:mkubecek@suse.cz?subject=SLE15-SP3%20branch">mkubecek@suse.cz</a>&gt;
+	Miroslav Benes &lt;<a href="mailto:mbenes@suse.cz?subject=SLE15-SP3%20branch">mbenes@suse.cz</a>&gt;
 </p><p>
-It is the above person's responsiblity for checking in this kernel to
+It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 </p><p>
@@ -73,12 +74,12 @@ mentioned maintainer.
 </p>
 
                     </p>
-                    <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP1-AZURE"><h2>packages</h2></a>
-                    <p>To install <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP1-AZURE">prebuilt kernel</a> from this branch run</p>
+                    <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP3"><h2>packages</h2></a>
+                    <p>To install <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP3">prebuilt kernel</a> from this branch run</p>
                     <pre>
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP1-AZURE/standard \
-    Kernel:SLE15-SP1-AZURE
-zypper in --from Kernel:SLE15-SP1-AZURE kernel-default
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP3/standard \
+    Kernel:SLE15-SP3
+zypper in --from Kernel:SLE15-SP3 kernel-default
                     </pre>
                     <p>Please note: The packages are built for the distribution
                     they are targetting. In case of the vanilla and linux-next
@@ -88,21 +89,21 @@ zypper in --from Kernel:SLE15-SP1-AZURE kernel-default
                     installing ancient kernels on the latest distributions is
                     asking for trouble. Same goes for the opposite case, e.g.
                     installing the Factory kernel on SLES 9.</p>
-                    <a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP1-AZURE"><h2>kernel-source.git</h2></a>
+                    <a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP3"><h2>kernel-source.git</h2></a>
 <p>There are two SUSE Kernel repositories. Development happens in the
-<a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP1-AZURE">kernel-source</a>
+<a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP3">kernel-source</a>
 git repository. This tree is a quile-like series of patches against the
 upstream kernel, plus spec files and various scripts. You can clone it with
 </p>
 
-<pre>git clone https://github.com/openSUSE/kernel-source -b SLE15-SP1-AZURE</pre>
-<a href="https://github.com/openSUSE/kernel/tree/SLE15-SP1-AZURE"><h2>kernel.git</h2></a>
+<pre>git clone https://github.com/openSUSE/kernel-source -b SLE15-SP3</pre>
+<a href="https://github.com/openSUSE/kernel/tree/SLE15-SP3"><h2>kernel.git</h2></a>
 <p> If you just want to hack on the sources and do not need to package the
-kernel, use the <a href="https://github.com/openSUSE/kernel/tree/SLE15-SP1-AZURE">kernel</a>
+kernel, use the <a href="https://github.com/openSUSE/kernel/tree/SLE15-SP3">kernel</a>
 git repository. This one has the same layout as the upstream kernel. Clone
 command: </p>
 
-<pre>git clone https://github.com/openSUSE/kernel -b SLE15-SP1-AZURE</pre>
+<pre>git clone https://github.com/openSUSE/kernel -b SLE15-SP3</pre>
                     
 
 
