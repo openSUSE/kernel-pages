@@ -1,0 +1,118 @@
+lang: en
+title: openSUSE Kernel
+title_short: Kernel
+email: admin@opensuse.org
+description: openSUSE Kernel Site
+copyright: '© 2011–2020 openSUSE contributors'
+baseurl: ""
+url: "https://kernel.opensuse.org"
+
+navbar_links:
+  -
+    text: openSUSE
+    children:
+      -
+        link: master.html
+        text: master
+      -
+        link: stable.html
+        text: stable
+      -
+        link: openSUSE-15.2.html
+        text: openSUSE-15.2
+      -
+        link: openSUSE-15.1.html
+        text: openSUSE-15.1
+  -
+    text: upstream
+    children:
+      -
+        link: linux-next.html
+        text: linux-next
+      -
+        link: vanilla.html
+        text: vanilla
+  -
+    text: SLE
+    children:
+      -
+        link: SLE15-SP3.html
+        text: SLE15-SP3
+      -
+        link: SLE15-SP2.html
+        text: SLE15-SP2
+      -
+        link: SLE15-SP1.html
+        text: SLE15-SP1
+      -
+        link: SLE12-SP5.html
+        text: SLE12-SP5
+      -
+        link: SLE12-SP4.html
+        text: SLE12-SP4
+  -
+    text: SLE Addons
+    children:
+      -
+        link: SLE15-SP3-AZURE.html
+        text: SLE15-SP3-AZURE
+      -
+        link: SLE15-SP2-EB.html
+        text: SLE15-SP2-EB
+      -
+        link: SLE15-SP2-AZURE.html
+        text: SLE15-SP2-AZURE
+      -
+        link: SLE15-SP1-AZURE.html
+        text: SLE15-SP1-AZURE
+      -
+        link: SLE12-SP5-AZURE.html
+        text: SLE12-SP5-AZURE
+      -
+        link: SLE12-SP4-AZURE.html
+        text: SLE12-SP4-AZURE
+  -
+    text: SLE Live Patching
+    children:
+      -
+        link: SLE15-SP2-lp.html
+        text: SLE15-SP2
+      -
+        link: SLE15-SP1-lp.html
+        text: SLE15-SP1
+      -
+        link: SLE12-SP5-lp.html
+        text: SLE12-SP5
+      -
+        link: SLE12-SP4-lp.html
+        text: SLE12-SP4
+
+footer_links:
+  -
+    text: Source Code
+    link: https://github.com/openSUSE/kernel-pages
+
+theme: jekyll-theme-opensuse
+remote_theme: openSUSE/jekyll-theme
+plugins:
+  - jekyll-redirect-from
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "*.html"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "*.md"
+    values:
+      layout: "markdown"
+  -
+    scope:
+      path: "*.markdown"
+    values:
+      layout: "markdown"
+
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]
