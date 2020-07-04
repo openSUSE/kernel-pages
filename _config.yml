@@ -98,6 +98,9 @@ plugins:
   - jekyll-redirect-from
 markdown: kramdown
 
+search_provider: github
+search_github_repo: openSUSE/kernel-pages
+
 defaults:
   -
     scope:
