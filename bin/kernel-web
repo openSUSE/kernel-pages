@@ -1,7 +1,9 @@
 #!/usr/bin/ruby
+require 'yaml'
+require 'fileutils'
 
-kernel_source = "/srv/kbuild/kernel-source.git"
-kernel_livepatch = "/srv/kbuild/kgraft-patches.git"
+kernel_source = ENV['KERNEL_SOURCE'] || "/srv/kbuild/kernel-source.git"
+kernel_livepatch = ENV['KERNEL_LIVEPATCH'] || "/srv/kbuild/kgraft-patches.git"
 
 def usage
   puts "usage: kernel-web SUSE|openSUSE <output directory>"
@@ -44,8 +46,18 @@ def get_branchinfo repo, branch
   Process.waitpid pid, 0 rescue nil
   threads.each{|t|t.join}
   return "" if $? != 0
-  "<p>" + out.gsub(/<([^>]*)>/,'&lt;<a href="mailto:\1?subject='+branch+'%20branch">\1</a>&gt;').gsub(/^$/,"</p><p>") + "</p>"
+  out.gsub(/<([^>]*)>/,'<[\1](mailto:\1?subject=' + branch + '%20branch)>').gsub(/(?<=\n)( |\t)*/, '')
 end
+
+open = ''
+open = 'open' if ARGV[0] == 'openSUSE'
+usage if open != open && ARGV[0] != 'SUSE'
+usage if ARGV.length != 2
+output = ARGV[1]
+
+Dir.mkdir("#{output}") unless File.exists?("#{output}")
+
+config = {}
 
 branches = branches_with_flag "publish"
 
@@ -63,62 +75,66 @@ branches.each{|b|
   branch_livepatches[b] = livepatches if livepatches.length > 0
 }
 
-branch_entry = '<li><a href="@branch@.html">@branch@</a></li>'
-branch_lp_entry = '<li><a href="@branch@-lp.html">@branch@</a></li>'
+config['lang'] = 'en'
+config['title'] = "#{open}SUSE Kernel"
+config['title_short'] = 'Kernel'
+config['description'] = "#{open}SUSE Kernel Site"
+config['copyright'] = "© 2011–2020 #{open == '' ? 'SUSE LLC.' : 'openSUSE Contributors'}"
+config['url'] = "https://kernel.#{open}suse.#{open == '' ? 'com' : 'org'}"
 
-title = '@open@SUSE Kernel Resources'
+config['navbar_links'] = []
 
-branch_title = '@branch@ Kernel Branch'
+config['navbar_links'] << {'text' => 'openSUSE', 'children' => opensuse.map{|b| {'text' => b, 'link' => b + '.html'}}}
+config['navbar_links'] << {'text' => 'upstream', 'children' => upstream.map{|b| {'text' => b, 'link' => b + '.html'}}}
+config['navbar_links'] << {'text' => 'SLE', 'children' => sle.map{|b| {'text' => b, 'link' => b + '.html'}}}
+config['navbar_links'] << {'text' => 'SLE Addons', 'children' => sle_add.map{|b| {'text' => b, 'link' => b + '.html'}}}
+config['navbar_links'] << {'text' => 'SLE Live Patching', 'children' => branch_livepatches.keys.map{|b| {'text' => b, 'link' => b + '-lp.html'}}}
 
-open = ''
-open = 'open' if ARGV[0] == 'openSUSE'
-usage if open != open && ARGV[0] != 'SUSE'
-usage if ARGV.length != 2
-output = ARGV[1]
+config['footer_links'] = [{'text' => 'Source Code', 'link' => "https://github.com/#{open}SUSE/kernel-pages"}]
 
-tmpl = expand_template(File.read("kernel-web/#{open}SUSE.html"), {
-  "opensuse" =>  opensuse.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
-  "upstream" => upstream.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
-  "sle_add" => sle_add.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
-  "sle" => sle.map{|b| expand_template(branch_entry, {"branch" => b})}.join("\n"),
-  "lp_branches" => branch_livepatches.keys.map{|b| expand_template(branch_lp_entry, {"branch" => b})}.join("\n"),
-})
+config['plugins'] = ['jekyll-redirect-from']
+
+config['search_provider'] = 'github'
+config['search_github_repo'] = 'openSUSE/kernel-pages'
+
+if open != ''
+  FileUtils.rm_rf("#{output}/_layouts") if File.exists?("#{output}/_layouts")
+  config['remote_theme'] = 'openSUSE/jekyll-theme'
+  config['defaults'] = [{'scope' => {'path' => '*.md'}, 'values' => {'layout' => 'markdown'}}]
+else
+  Dir.mkdir("#{output}/_layouts") unless File.exists?("#{output}/_layouts")
+  FileUtils.cp("kernel-web/suse.html", "#{output}/_layouts")
+  config['defaults'] = [{'scope' => {'path' => '*.md'}, 'values' => {'layout' => 'suse'}}]
+end
+config['exclude'] = ['README.md', 'Gemfile', 'Gemfile.lock', 'vendor']
+
+File.write "#{output}/_config.yml", config.to_yaml
+
+FileUtils.cp("kernel-web/Gemfile", "#{output}")
 
 content = File.read("kernel-web/index-content")
 
-File.write "#{output}/index.html", expand_template(tmpl, {
+File.write "#{output}/index.md", expand_template(content, {
   "content" => content,
-  "title" => title,
   "open" => open
 })
 
 content = File.read("kernel-web/branch-content")
 lp_content = File.read("kernel-web/livepatch-content")
-redirect = File.read("kernel-web/redirect.html")
-
-Dir.mkdir("#{output}/branches") unless File.exists?("#{output}/branches")
 
 branches.each{|b|
   repo = b
   repo = 'HEAD' if b == 'master'
-  livepatches = "<h2>live patches</h2><p> Sources of kernel live patch updates " +
-    branch_livepatches[b].map{|l| "<a href=\"https://github.com/SUSE/kernel-livepatch/tree/#{l}\">#{l}</a>" }.join(" ") + "</p>" rescue ''
-  File.write "#{output}/#{b}.html", expand_template(tmpl, {
-    "content" => content,
-    "title" => branch_title,
+  livepatches = "## live patches\nSources of kernel live patch updates " +
+    branch_livepatches[b].map{|l| "[#{l}](https://github.com/SUSE/kernel-livepatch/tree/#{l})" }.join(" ") rescue ''
+  File.write "#{output}/#{b}.md", expand_template(content, {
     "open" => open,
     "branch" => b,
     "repo" => repo,
     "livepatches" => livepatches,
     "branchinfo" => get_branchinfo(kernel_source, b),
   })
-  Dir.mkdir("#{output}/branches/#{b}") unless File.exists?("#{output}/branches/#{b}")
-  File.write "#{output}/branches/#{b}/index.html", expand_template(redirect, {
-    "branch" => b,
-  })
-  File.write "#{output}/#{b}-lp.html", expand_template(tmpl, {
-    "content" => lp_content,
-    "title" => "Live Patches for " + branch_title,
+  File.write "#{output}/#{b}-lp.md", expand_template(lp_content, {
     "open" => open,
     "branch" => b,
     "livepatches" => livepatches,

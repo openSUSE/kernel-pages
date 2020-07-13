@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8">
+    <style type="text/css" media="screen" title="All" charset="utf-8">
+        .ui-oo-content-wrapper .ui-oo-box-shadow > * > a > h2,.content-wrapper .box-shadow > * > a > h2{margin-top:1.8em;margin-bottom:0.7em;}
+    </style>
+    <link rel="icon" type="image/png" href="https://www.suse.com/favicon.ico">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+</head>
+
+<body>
+    <div id="content" class="container_16 content-wrapper">
+        <div class="column grid_4 alpha">
+            <div class=" box box-shadow alpha clear-both navigation">
+                <h2 id="header" class="box-header" style="color:white; font-size:1em; font-style:bold;">
+                    <img src="https://static.opensuse.org/themes/bento/images/header-logo.png" />
+                    <div style="display:inline-block; vertical-align:middle; margin-bottom:11px">Branches</div>
+                </h2>
+                {% for item in site.navbar_links %}
+                <h2 class="box-subheader"> {{ item.text }} </h2>
+                <ul class="navigation">
+                    {% for child in item.children %}
+                    <li><a href="{{ child.link }}">{{ child.text }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="box box-shadow grid_12 clearfix">
+            <div class="grid_12 alpha omega row_30">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-legal" class="border-top grid_16">
+        <p>
+            © 2020 SUSE LLC. All rights reserved.
+        </p>
+    </div>
+
+    <!-- End: Footer -->
+
+</body>
+
+</html>

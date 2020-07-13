@@ -1,9 +1,10 @@
-                    <h1>Welcome To The @open@SUSE Kernel Site</h1>
-                    <p>An introduction into the SUSE kernel is in the <a href="https://en.opensuse.org/Kernel">wiki</a>. On this site, you can
-                    find basic information about each
-                    kernel branch links to git
-                    trees and package
-                    repositories.
-                    Use the links on the left to navigate the site.</p>
+---
+---
 
-                    <p>Have a lot of fun...</p>
+# Welcome To The @open@SUSE Kernel Site
+An introduction into the SUSE kernel is in the
+[wiki](https://en.opensuse.org/Kernel). On this site, you can find basic
+information about each kernel branch links to git trees and package
+repositories. Use the links to navigate the site.
+
+Have a lot of fun...
