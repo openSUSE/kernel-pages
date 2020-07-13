@@ -1,4 +1,7 @@
-                    <h1>Live patches for @branch@</h1>
-                    @branchinfo@
+---
+title: Live Patches for @branch@ branch
+---
+# Live patches for @branch@
+@branchinfo@
 
-                    @livepatches@
+@livepatches@
