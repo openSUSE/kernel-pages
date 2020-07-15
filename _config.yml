@@ -1,0 +1,72 @@
+---
+lang: en
+title: openSUSE Kernel
+title_short: Kernel
+description: openSUSE Kernel Site
+copyright: "© 2011–2020 openSUSE Contributors"
+url: https://kernel.opensuse.org
+navbar_links:
+- text: openSUSE
+  children:
+  - text: master
+    link: master.html
+  - text: stable
+    link: stable.html
+  - text: openSUSE-15.2
+    link: openSUSE-15.2.html
+  - text: openSUSE-15.1
+    link: openSUSE-15.1.html
+- text: upstream
+  children:
+  - text: linux-next
+    link: linux-next.html
+  - text: vanilla
+    link: vanilla.html
+- text: SLE
+  children:
+  - text: SLE15-SP3
+    link: SLE15-SP3.html
+  - text: SLE15-SP2
+    link: SLE15-SP2.html
+  - text: SLE15-SP1
+    link: SLE15-SP1.html
+  - text: SLE12-SP5
+    link: SLE12-SP5.html
+- text: SLE Addons
+  children:
+  - text: SLE15-SP3-AZURE
+    link: SLE15-SP3-AZURE.html
+  - text: SLE15-SP2-EB
+    link: SLE15-SP2-EB.html
+  - text: SLE15-SP2-AZURE
+    link: SLE15-SP2-AZURE.html
+  - text: SLE15-SP1-AZURE
+    link: SLE15-SP1-AZURE.html
+  - text: SLE12-SP5-AZURE
+    link: SLE12-SP5-AZURE.html
+- text: SLE Live Patching
+  children:
+  - text: SLE15-SP2
+    link: SLE15-SP2-lp.html
+  - text: SLE15-SP1
+    link: SLE15-SP1-lp.html
+  - text: SLE12-SP5
+    link: SLE12-SP5-lp.html
+footer_links:
+- text: Source Code
+  link: https://github.com/openSUSE/kernel-pages
+plugins:
+- jekyll-redirect-from
+search_provider: github
+search_github_repo: openSUSE/kernel-pages
+remote_theme: openSUSE/jekyll-theme
+defaults:
+- scope:
+    path: "*.md"
+  values:
+    layout: markdown
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- vendor
