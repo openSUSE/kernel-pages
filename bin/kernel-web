@@ -26,6 +26,12 @@ def branches_with_flag flag
   branches
 end
 
+def check_branches repo, branches
+  diff = branches - IO.popen("git --git-dir #{repo} branch").read.gsub(/[*]/, ' ').split(/[[:space:]]/)
+  STDERR.puts "Branches #{diff.join(" ")} not present in #{repo}." if diff.length > 0
+  branches - diff
+end
+
 def expand_template tmpl, hash
   hash.keys.each{|k|
     tmpl = tmpl.gsub(/@#{k}@/,hash[k])
@@ -67,6 +73,8 @@ sle = branches.select{|b| b =~ /^SLE1[0-9](-SP[0-9])?$/}.sort.reverse
 sle_add = (branches-sle).select{|b| b =~ /^SLE1[0-9](-SP[0-9])?/}.sort.reverse
 
 branches = upstream + opensuse + sle + sle_add
+
+branches = check_branches(kernel_source, branches)
 
 all_livepatches = `git ls-remote #{kernel_livepatch}`.lines.select{|l| l =~ %r,^[0-9a-f]{40}\trefs/heads/.*_Update_[0-9]+$,}.map{|l| l.chomp.sub(%r,^[0-9a-f]{40}\trefs/heads/,,"")}
 branch_livepatches = {}
