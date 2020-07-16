@@ -39,8 +39,8 @@ def expand_template tmpl, hash
   tmpl
 end
 
-def get_branchinfo repo, branch
-  cmd=%W(git --git-dir #{repo} show #{branch}:README.BRANCH)
+def git_get_file repo, file
+  cmd = %W(git --git-dir #{repo} show #{file})
   stdin, inpipe = IO.pipe
   outpipe, stdout= IO.pipe
   errpipe, stderr= IO.pipe
@@ -51,7 +51,20 @@ def get_branchinfo repo, branch
   threads = [ Thread.new{ out = outpipe.read }, Thread.new{ err = errpipe.read } ]
   Process.waitpid pid, 0 rescue nil
   threads.each{|t|t.join}
-  return "" if $? != 0
+
+  return nil if $? != 0
+
+  out
+end
+
+def get_branchinfo repo, branch
+  readme = %W(#{branch}:README.BRANCH master:README)
+  out = nil
+
+  readme.each{|r| break if (out = (git_get_file repo, r))}
+
+  return "" if !out
+
   out.gsub(/<([^>]*)>/,'<[\1](mailto:\1?subject=' + branch + '%20branch)>').gsub(/(?<=\n)( |\t)*/, '')
 end
 
