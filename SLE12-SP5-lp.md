@@ -4,7 +4,7 @@ title: Live Patches for SLE12-SP5 branch
 # Live patches for SLE12-SP5
 This is the live patches repository.
 
-The persons in charge of the repository are:
+The people in charge of the repository are:
 Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=SLE12-SP5_Update_6%20branch)>
 Nicolai Stange <[nstange@suse.de](mailto:nstange@suse.de?subject=SLE12-SP5_Update_6%20branch)>
 

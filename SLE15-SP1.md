@@ -5,12 +5,12 @@ redirect_from: /branches/SLE15-SP1/
 # SLE15-SP1
 This is the SLE15 SP1 kernel branch.
 
-The persons in charge of this branch are:
+The people in charge of this branch are:
 Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP1%20branch)>
 Petr Tesarik <[ptesarik@suse.cz](mailto:ptesarik@suse.cz?subject=SLE15-SP1%20branch)>
 Oliver Neukum <[oneukum@suse.de](mailto:oneukum@suse.de?subject=SLE15-SP1%20branch)>
 
-It is the above person's responsiblity for checking in this kernel to
+It is the people aboves responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 

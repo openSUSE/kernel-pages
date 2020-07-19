@@ -4,7 +4,7 @@ title: Live Patches for SLE15-SP2 branch
 # Live patches for SLE15-SP2
 This is the live patches repository.
 
-The persons in charge of the repository are:
+The people in charge of the repository are:
 Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=SLE15-SP2_Update_1%20branch)>
 Nicolai Stange <[nstange@suse.de](mailto:nstange@suse.de?subject=SLE15-SP2_Update_1%20branch)>
 

@@ -5,11 +5,11 @@ redirect_from: /branches/SLE15-SP2/
 # SLE15-SP2
 This is the SLE15 SP2 kernel branch.
 
-The persons in charge of this branch are:
+The people in charge of this branch are:
 Michal Kubecek <[mkubecek@suse.cz](mailto:mkubecek@suse.cz?subject=SLE15-SP2%20branch)>
 Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=SLE15-SP2%20branch)>
 
-It is the above persons' responsiblity for checking in this kernel to
+It is the people aboves responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 

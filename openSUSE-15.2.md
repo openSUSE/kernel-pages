@@ -5,11 +5,11 @@ redirect_from: /branches/openSUSE-15.2/
 # openSUSE-15.2
 This is the openSUSE Leap 15.2 kernel branch.
 
-The persons in charge of this branch are:
+The people in charge of this branch are:
 Michal Kubecek <[mkubecek@suse.cz](mailto:mkubecek@suse.cz?subject=openSUSE-15.2%20branch)>
 Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=openSUSE-15.2%20branch)>
 
-It is the above persons' responsiblity for checking in this kernel to
+It is the above peoples responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 
