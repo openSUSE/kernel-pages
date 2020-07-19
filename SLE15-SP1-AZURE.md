@@ -5,7 +5,7 @@ redirect_from: /branches/SLE15-SP1-AZURE/
 # SLE15-SP1-AZURE
 This is the SLE15 SP1 AZURE kernel branch.
 
-The person in charge of this branch are:
+The person in charge of this branch is:
 Olaf Hering <[ohering@suse.de](mailto:ohering@suse.de?subject=SLE15-SP1-AZURE%20branch)>
 
 It is the person aboves responsiblity for checking in this kernel to
