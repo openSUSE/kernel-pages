@@ -10,11 +10,11 @@ kernel.org releases.
 Use this branch at your own risk and please report bugs against
 openSUSE Factory.
 
-The person in charge of this branch is:
+The people in charge of this branch are:
 Jeff Mahoney <[jeffm@suse.com](mailto:jeffm@suse.com?subject=master%20branch)>
 Michal Kubecek <[mkubecek@suse.com](mailto:mkubecek@suse.com?subject=master%20branch)>
 
-It is the above person's responsiblity for checking in this kernel to
+It is the people aboves responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 

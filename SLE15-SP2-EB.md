@@ -5,13 +5,13 @@ redirect_from: /branches/SLE15-SP2-EB/
 # SLE15-SP2-EB
 This is the SLE 15 SP2 EB kernel branch.
 
-The persons in charge of this branch are:
+The people in charge of this branch are:
 Jiri Kosina <[jkosina@suse.de](mailto:jkosina@suse.de?subject=SLE15-SP2-EB%20branch)>
 Joey Lee <[jlee@suse.de](mailto:jlee@suse.de?subject=SLE15-SP2-EB%20branch)>
 Gary Lin <[glin@suse.de](mailto:glin@suse.de?subject=SLE15-SP2-EB%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP2-EB%20branch)>
 
-It is the above persons' responsiblity for checking in this kernel to
+It is the people aboves responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 

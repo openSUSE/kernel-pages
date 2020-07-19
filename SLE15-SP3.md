@@ -5,11 +5,11 @@ redirect_from: /branches/SLE15-SP3/
 # SLE15-SP3
 This is the SLE15 SP3 kernel branch.
 
-The persons in charge of this branch are:
+The people in charge of this branch are:
 Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE15-SP3%20branch)>
 Jessica Yu <[jeyu@suse.de](mailto:jeyu@suse.de?subject=SLE15-SP3%20branch)>
 
-It is the above persons' responsiblity for checking in this kernel to
+It is the people aboves responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 
