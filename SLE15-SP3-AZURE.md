@@ -3,13 +3,12 @@ title: SLE15-SP3-AZURE branch
 redirect_from: /branches/SLE15-SP3-AZURE/
 ---
 # SLE15-SP3-AZURE
-This is the SLE15 SP3 kernel branch.
+This is the SLE 15 SP3 AZURE kernel branch.
 
 The persons in charge of this branch are:
-Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE15-SP3-AZURE%20branch)>
-Jessica Yu <[jeyu@suse.de](mailto:jeyu@suse.de?subject=SLE15-SP3-AZURE%20branch)>
+Olaf Hering <[ohering@suse.de](mailto:ohering@suse.de?subject=SLE15-SP3-AZURE%20branch)>
 
-It is the above persons' responsiblity for checking in this kernel to
+It is the above person's responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
 permission from them first.
 
