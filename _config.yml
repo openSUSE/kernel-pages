@@ -46,6 +46,8 @@ navbar_links:
     link: SLE12-SP5-AZURE.html
 - text: SLE Live Patching
   children:
+  - text: SLE15-SP3
+    link: SLE15-SP3-lp.html
   - text: SLE15-SP2
     link: SLE15-SP2-lp.html
   - text: SLE15-SP1
