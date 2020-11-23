@@ -10,7 +10,7 @@ Jiri Kosina <[jkosina@suse.de](mailto:jkosina@suse.de?subject=SLE15-SP2-EB%20bra
 Joey Lee <[jlee@suse.de](mailto:jlee@suse.de?subject=SLE15-SP2-EB%20branch)>
 Gary Lin <[glin@suse.de](mailto:glin@suse.de?subject=SLE15-SP2-EB%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP2-EB%20branch)>
-Varad Gautam <[varad.gautam@suse.com](mailto:varad.gautam@suse.com?subject=SLE15-SP2-EB%20branch)>
+Varad Gautam <[vgautam@suse.de](mailto:vgautam@suse.de?subject=SLE15-SP2-EB%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
