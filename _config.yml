@@ -28,8 +28,6 @@ navbar_links:
     link: SLE15-SP3.html
   - text: SLE15-SP2
     link: SLE15-SP2.html
-  - text: SLE15-SP1
-    link: SLE15-SP1.html
   - text: SLE12-SP5
     link: SLE12-SP5.html
 - text: SLE Addons
@@ -40,8 +38,8 @@ navbar_links:
     link: SLE15-SP2-EB.html
   - text: SLE15-SP2-AZURE
     link: SLE15-SP2-AZURE.html
-  - text: SLE15-SP1-AZURE
-    link: SLE15-SP1-AZURE.html
+  - text: SLE15-SP1-LTSS
+    link: SLE15-SP1-LTSS.html
   - text: SLE12-SP5-AZURE
     link: SLE12-SP5-AZURE.html
 - text: SLE Live Patching
@@ -50,8 +48,6 @@ navbar_links:
     link: SLE15-SP3-lp.html
   - text: SLE15-SP2
     link: SLE15-SP2-lp.html
-  - text: SLE15-SP1
-    link: SLE15-SP1-lp.html
   - text: SLE12-SP5
     link: SLE12-SP5-lp.html
 footer_links:
