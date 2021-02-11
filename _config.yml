@@ -32,6 +32,8 @@ navbar_links:
   children:
   - text: SLE15-SP3-AZURE
     link: SLE15-SP3-AZURE.html
+  - text: SLE15-SP2-EB-staging
+    link: SLE15-SP2-EB-staging.html
   - text: SLE15-SP2-EB
     link: SLE15-SP2-EB.html
   - text: SLE15-SP2-AZURE
