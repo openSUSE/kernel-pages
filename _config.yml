@@ -30,6 +30,8 @@ navbar_links:
     link: SLE12-SP5.html
 - text: SLE Addons
   children:
+  - text: SLE15-SP3-UPDATE
+    link: SLE15-SP3-UPDATE.html
   - text: SLE15-SP3-AZURE
     link: SLE15-SP3-AZURE.html
   - text: SLE15-SP2-EB-staging
