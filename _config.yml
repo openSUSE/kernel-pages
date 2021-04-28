@@ -32,14 +32,20 @@ navbar_links:
   children:
   - text: SLE15-SP3-UPDATE
     link: SLE15-SP3-UPDATE.html
+  - text: SLE15-SP3-RT
+    link: SLE15-SP3-RT.html
   - text: SLE15-SP3-AZURE
     link: SLE15-SP3-AZURE.html
+  - text: SLE15-SP2-RT
+    link: SLE15-SP2-RT.html
   - text: SLE15-SP2-EB-staging
     link: SLE15-SP2-EB-staging.html
   - text: SLE15-SP2-EB
     link: SLE15-SP2-EB.html
   - text: SLE15-SP2-AZURE
     link: SLE15-SP2-AZURE.html
+  - text: SLE12-SP5-RT
+    link: SLE12-SP5-RT.html
   - text: SLE12-SP5-AZURE
     link: SLE12-SP5-AZURE.html
 - text: SLE Live Patching
