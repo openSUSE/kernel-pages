@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="https://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8">
+            <style type="text/css" media="screen" title="All" charset="utf-8">
+.ui-oo-content-wrapper .ui-oo-box-shadow > * > a > h2,.content-wrapper .box-shadow > * > a > h2{margin-top:1.8em;margin-bottom:0.7em;}
+            </style>
+            <link rel="icon" type="image/png" href="https://static.opensuse.org/themes/bento/images/favicon.png">
+            <title>SLE15-SP1 Kernel Branch</title>
+    </head>
+    <body>
+        <div id="content" class="container_16 content-wrapper">
+            <div class="column grid_4 alpha">
+                <div class=" box box-shadow alpha clear-both navigation">
+                    <h2 id="header" class="box-header" style="color:white; font-size:1em; font-style:bold;">
+                        <img src="https://static.opensuse.org/themes/bento/images/header-logo.png" />
+                        <div style="display:inline-block; vertical-align:middle; margin-bottom:11px">Branches</div></h2>
+                    <h2 class="box-subheader"> openSUSE </h2>
+                    <ul class="navigation">
+                        <li><a href="master.html">master</a></li>
+<li><a href="stable.html">stable</a></li>
+<li><a href="openSUSE-15.2.html">openSUSE-15.2</a></li>
+<li><a href="openSUSE-15.1.html">openSUSE-15.1</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> upstream </h2>
+                    <ul class="navigation">
+                        <li><a href="linux-next.html">linux-next</a></li>
+<li><a href="vanilla.html">vanilla</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE </h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2.html">SLE15-SP2</a></li>
+<li><a href="SLE15-SP1.html">SLE15-SP1</a></li>
+<li><a href="SLE12-SP5.html">SLE12-SP5</a></li>
+<li><a href="SLE12-SP4.html">SLE12-SP4</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE Addons</h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2-EB.html">SLE15-SP2-EB</a></li>
+<li><a href="SLE15-SP2-AZURE.html">SLE15-SP2-AZURE</a></li>
+<li><a href="SLE15-SP1-AZURE.html">SLE15-SP1-AZURE</a></li>
+<li><a href="SLE12-SP5-AZURE.html">SLE12-SP5-AZURE</a></li>
+<li><a href="SLE12-SP4-AZURE.html">SLE12-SP4-AZURE</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE Live Patching</h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2-lp.html">SLE15-SP2</a></li>
+<li><a href="SLE15-SP1-lp.html">SLE15-SP1</a></li>
+<li><a href="SLE12-SP5-lp.html">SLE12-SP5</a></li>
+<li><a href="SLE12-SP4-lp.html">SLE12-SP4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box box-shadow grid_12 clearfix">
+                <div class="grid_12 alpha omega row_30">
+
+                                        <h1>SLE15-SP1</h1>
+                    
+
+                    </p>
+                    <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP1"><h2>packages</h2></a>
+                    <p>To install <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP1">prebuilt kernel</a> from this branch run</p>
+                    <pre>
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP1/standard \
+    Kernel:SLE15-SP1
+zypper in --from Kernel:SLE15-SP1 kernel-default
+                    </pre>
+                    <p>Please note: The packages are built for the distribution
+                    they are targetting. In case of the vanilla and linux-next
+                    branches, this is the latest released openSUSE version.
+                    While the packages should work fine on fine on a
+                    distribution that is slightly newer or slightly older,
+                    installing ancient kernels on the latest distributions is
+                    asking for trouble. Same goes for the opposite case, e.g.
+                    installing the Factory kernel on SLES 9.</p>
+                    <a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP1"><h2>kernel-source.git</h2></a>
+<p>There are two SUSE Kernel repositories. Development happens in the
+<a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP1">kernel-source</a>
+git repository. This tree is a quile-like series of patches against the
+upstream kernel, plus spec files and various scripts. You can clone it with
+</p>
+
+<pre>git clone https://github.com/openSUSE/kernel-source -b SLE15-SP1</pre>
+<a href="https://github.com/openSUSE/kernel/tree/SLE15-SP1"><h2>kernel.git</h2></a>
+<p> If you just want to hack on the sources and do not need to package the
+kernel, use the <a href="https://github.com/openSUSE/kernel/tree/SLE15-SP1">kernel</a>
+git repository. This one has the same layout as the upstream kernel. Clone
+command: </p>
+
+<pre>git clone https://github.com/openSUSE/kernel -b SLE15-SP1</pre>
+                    <h2>live patches</h2><p> Sources of kernel live patch updates <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_26">SLE15-SP1_Update_26</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_25">SLE15-SP1_Update_25</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_24">SLE15-SP1_Update_24</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_23">SLE15-SP1_Update_23</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_22">SLE15-SP1_Update_22</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_21">SLE15-SP1_Update_21</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_20">SLE15-SP1_Update_20</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_19">SLE15-SP1_Update_19</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_18">SLE15-SP1_Update_18</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_17">SLE15-SP1_Update_17</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_16">SLE15-SP1_Update_16</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_15">SLE15-SP1_Update_15</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_14">SLE15-SP1_Update_14</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_13">SLE15-SP1_Update_13</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_12">SLE15-SP1_Update_12</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_11">SLE15-SP1_Update_11</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_10">SLE15-SP1_Update_10</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_9">SLE15-SP1_Update_9</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_8">SLE15-SP1_Update_8</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_7">SLE15-SP1_Update_7</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_6">SLE15-SP1_Update_6</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_5">SLE15-SP1_Update_5</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_4">SLE15-SP1_Update_4</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_3">SLE15-SP1_Update_3</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_2">SLE15-SP1_Update_2</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_1">SLE15-SP1_Update_1</a> <a href="https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP1_Update_0">SLE15-SP1_Update_0</a></p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-legal" class="border-top grid_16">
+            <p>
+            © 2020 SUSE LLC. All rights reserved.
+            </p>
+        </div>
+
+        <!-- End: Footer -->
+
+    </body>
+</html>

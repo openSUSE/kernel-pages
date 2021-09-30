@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="https://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8">
+            <style type="text/css" media="screen" title="All" charset="utf-8">
+.ui-oo-content-wrapper .ui-oo-box-shadow > * > a > h2,.content-wrapper .box-shadow > * > a > h2{margin-top:1.8em;margin-bottom:0.7em;}
+            </style>
+            <link rel="icon" type="image/png" href="https://static.opensuse.org/themes/bento/images/favicon.png">
+            <title>SLE15-SP2-EB Kernel Branch</title>
+    </head>
+    <body>
+        <div id="content" class="container_16 content-wrapper">
+            <div class="column grid_4 alpha">
+                <div class=" box box-shadow alpha clear-both navigation">
+                    <h2 id="header" class="box-header" style="color:white; font-size:1em; font-style:bold;">
+                        <img src="https://static.opensuse.org/themes/bento/images/header-logo.png" />
+                        <div style="display:inline-block; vertical-align:middle; margin-bottom:11px">Branches</div></h2>
+                    <h2 class="box-subheader"> openSUSE </h2>
+                    <ul class="navigation">
+                        <li><a href="master.html">master</a></li>
+<li><a href="stable.html">stable</a></li>
+<li><a href="openSUSE-15.2.html">openSUSE-15.2</a></li>
+<li><a href="openSUSE-15.1.html">openSUSE-15.1</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> upstream </h2>
+                    <ul class="navigation">
+                        <li><a href="linux-next.html">linux-next</a></li>
+<li><a href="vanilla.html">vanilla</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE </h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2.html">SLE15-SP2</a></li>
+<li><a href="SLE15-SP1.html">SLE15-SP1</a></li>
+<li><a href="SLE12-SP5.html">SLE12-SP5</a></li>
+<li><a href="SLE12-SP4.html">SLE12-SP4</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE Addons</h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2-EB.html">SLE15-SP2-EB</a></li>
+<li><a href="SLE15-SP2-AZURE.html">SLE15-SP2-AZURE</a></li>
+<li><a href="SLE15-SP1-AZURE.html">SLE15-SP1-AZURE</a></li>
+<li><a href="SLE12-SP5-AZURE.html">SLE12-SP5-AZURE</a></li>
+<li><a href="SLE12-SP4-AZURE.html">SLE12-SP4-AZURE</a></li>
+                    </ul>
+                    <h2 class="box-subheader"> SLE Live Patching</h2>
+                    <ul class="navigation">
+                        <li><a href="SLE15-SP2-lp.html">SLE15-SP2</a></li>
+<li><a href="SLE15-SP1-lp.html">SLE15-SP1</a></li>
+<li><a href="SLE12-SP5-lp.html">SLE12-SP5</a></li>
+<li><a href="SLE12-SP4-lp.html">SLE12-SP4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box box-shadow grid_12 clearfix">
+                <div class="grid_12 alpha omega row_30">
+
+                                        <h1>SLE15-SP2-EB</h1>
+                    <p>This is the SLE 15 SP2 EB kernel branch.
+</p><p>
+The persons in charge of this branch are:
+	Jiri Kosina &lt;<a href="mailto:jkosina@suse.de?subject=SLE15-SP2-EB%20branch">jkosina@suse.de</a>&gt;
+	Joey Lee &lt;<a href="mailto:jlee@suse.de?subject=SLE15-SP2-EB%20branch">jlee@suse.de</a>&gt;
+	Gary Lin &lt;<a href="mailto:glin@suse.de?subject=SLE15-SP2-EB%20branch">glin@suse.de</a>&gt;
+	Frederic Weisbecker &lt;<a href="mailto:fweisbecker@suse.de?subject=SLE15-SP2-EB%20branch">fweisbecker@suse.de</a>&gt;
+	Varad Gautam &lt;<a href="mailto:vgautam@suse.de?subject=SLE15-SP2-EB%20branch">vgautam@suse.de</a>&gt;
+	Petr Tesarik &lt;<a href="mailto:ptesarik@suse.de?subject=SLE15-SP2-EB%20branch">ptesarik@suse.de</a>&gt;
+</p><p>
+It is the above persons' responsiblity for checking in this kernel to
+the build system, anyone else who wishes to do so, needs to get
+permission from them first.
+</p><p>
+If there are any questions about this branch, please contact the above
+mentioned maintainer.
+</p>
+
+                    </p>
+                    <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP2-EB"><h2>packages</h2></a>
+                    <p>To install <a href="https://download.opensuse.org/repositories/Kernel:/SLE15-SP2-EB">prebuilt kernel</a> from this branch run</p>
+                    <pre>
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP2-EB/standard \
+    Kernel:SLE15-SP2-EB
+zypper in --from Kernel:SLE15-SP2-EB kernel-default
+                    </pre>
+                    <p>Please note: The packages are built for the distribution
+                    they are targetting. In case of the vanilla and linux-next
+                    branches, this is the latest released openSUSE version.
+                    While the packages should work fine on fine on a
+                    distribution that is slightly newer or slightly older,
+                    installing ancient kernels on the latest distributions is
+                    asking for trouble. Same goes for the opposite case, e.g.
+                    installing the Factory kernel on SLES 9.</p>
+                    <a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP2-EB"><h2>kernel-source.git</h2></a>
+<p>There are two SUSE Kernel repositories. Development happens in the
+<a href="https://github.com/openSUSE/kernel-source/tree/SLE15-SP2-EB">kernel-source</a>
+git repository. This tree is a quile-like series of patches against the
+upstream kernel, plus spec files and various scripts. You can clone it with
+</p>
+
+<pre>git clone https://github.com/openSUSE/kernel-source -b SLE15-SP2-EB</pre>
+<a href="https://github.com/openSUSE/kernel/tree/SLE15-SP2-EB"><h2>kernel.git</h2></a>
+<p> If you just want to hack on the sources and do not need to package the
+kernel, use the <a href="https://github.com/openSUSE/kernel/tree/SLE15-SP2-EB">kernel</a>
+git repository. This one has the same layout as the upstream kernel. Clone
+command: </p>
+
+<pre>git clone https://github.com/openSUSE/kernel -b SLE15-SP2-EB</pre>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-legal" class="border-top grid_16">
+            <p>
+            © 2020 SUSE LLC. All rights reserved.
+            </p>
+        </div>
+
+        <!-- End: Footer -->
+
+    </body>
+</html>
