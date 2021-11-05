@@ -24,7 +24,7 @@ To install
 from this branch run
 
 ```
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP4-RT/standard \
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE15-SP4-RT/pool \
     Kernel:SLE15-SP4-RT
 zypper in --from Kernel:SLE15-SP4-RT kernel-default
 ```

@@ -23,7 +23,7 @@ To install
 from this branch run
 
 ```
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/openSUSE-15.2/standard \
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/openSUSE-15.2/default \
     Kernel:openSUSE-15.2
 zypper in --from Kernel:openSUSE-15.2 kernel-default
 ```

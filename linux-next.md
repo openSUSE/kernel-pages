@@ -25,7 +25,7 @@ To install
 from this branch run
 
 ```
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/linux-next/standard \
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/linux-next/default \
     Kernel:linux-next
 zypper in --from Kernel:linux-next kernel-default
 ```

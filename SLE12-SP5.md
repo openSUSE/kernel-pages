@@ -23,7 +23,7 @@ To install
 from this branch run
 
 ```
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE12-SP5/standard \
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/SLE12-SP5/default \
     Kernel:SLE12-SP5
 zypper in --from Kernel:SLE12-SP5 kernel-default
 ```
