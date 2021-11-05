@@ -7,7 +7,7 @@ This is the SLE15 SP3 kernel branch.
 
 The persons in charge of this branch are:
 Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE15-SP3%20branch)>
-Jessica Yu <[jeyu@suse.de](mailto:jeyu@suse.de?subject=SLE15-SP3%20branch)>
+Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP3%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
