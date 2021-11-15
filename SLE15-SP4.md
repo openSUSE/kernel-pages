@@ -6,8 +6,8 @@ redirect_from: /branches/SLE15-SP4/
 This is the SLE15 SP4 kernel branch.
 
 The persons in charge of this branch are:
-Jessica Yu <[jeyu@suse.de](mailto:jeyu@suse.de?subject=SLE15-SP4%20branch)>
 Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP4%20branch)>
+Vlastimil Babka <[vbabka@suse.cz](mailto:vbabka@suse.cz?subject=SLE15-SP4%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
