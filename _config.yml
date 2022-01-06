@@ -12,8 +12,6 @@ navbar_links:
     link: master.html
   - text: stable
     link: stable.html
-  - text: openSUSE-15.2
-    link: openSUSE-15.2.html
 - text: upstream
   children:
   - text: linux-next
