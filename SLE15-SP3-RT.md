@@ -7,7 +7,6 @@ This is the SLE 15 SP3 RT kernel branch.
 
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP3-RT%20branch)>
-Davidlohr Bueso <[dbueso@suse.com](mailto:dbueso@suse.com?subject=SLE15-SP3-RT%20branch)>
 Jeffrey Cheung <[jcheung@suse.com](mailto:jcheung@suse.com?subject=SLE15-SP3-RT%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
