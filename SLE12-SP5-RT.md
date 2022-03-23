@@ -7,6 +7,7 @@ This is the SLE 12 SP5 RT kernel branch.
 
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE12-SP5-RT%20branch)>
+Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE12-SP5-RT%20branch)>
 Jeffrey Cheung <[jcheung@suse.com](mailto:jcheung@suse.com?subject=SLE12-SP5-RT%20branch)>
 
 It is the above person's responsiblity for checking in this kernel to
