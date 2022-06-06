@@ -20,7 +20,7 @@ To install
 from this branch run
 
 ```
-zypper ar -f https://download.opensuse.org/repositories/Kernel:/vanilla/default \
+zypper ar -f https://download.opensuse.org/repositories/Kernel:/vanilla/standard \
     Kernel:vanilla
 zypper in --from Kernel:vanilla kernel-default
 ```
