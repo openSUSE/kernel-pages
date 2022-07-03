@@ -58,4 +58,4 @@ git clone https://github.com/openSUSE/kernel -b SLE15-SP4
 ```
 
 ## live patches
-Sources of kernel live patch updates [SLE15-SP4_Update_1](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP4_Update_1) [SLE15-SP4_Update_0](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP4_Update_0)
+Sources of kernel live patch updates [SLE15-SP4_Update_2](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP4_Update_2) [SLE15-SP4_Update_1](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP4_Update_1) [SLE15-SP4_Update_0](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP4_Update_0)
