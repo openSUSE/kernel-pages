@@ -10,7 +10,6 @@ Jiri Kosina <[jkosina@suse.de](mailto:jkosina@suse.de?subject=SLE15-SP2-EB%20bra
 Joey Lee <[jlee@suse.de](mailto:jlee@suse.de?subject=SLE15-SP2-EB%20branch)>
 Gary Lin <[glin@suse.de](mailto:glin@suse.de?subject=SLE15-SP2-EB%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP2-EB%20branch)>
-Varad Gautam <[vgautam@suse.de](mailto:vgautam@suse.de?subject=SLE15-SP2-EB%20branch)>
 Bogdan Lezhepekov <[blezhepekov@suse.de](mailto:blezhepekov@suse.de?subject=SLE15-SP2-EB%20branch)>
 Petr Tesarik <[ptesarik@suse.de](mailto:ptesarik@suse.de?subject=SLE15-SP2-EB%20branch)>
 
