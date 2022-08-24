@@ -7,6 +7,7 @@ This is the SLE 15 SP3 AZURE kernel branch.
 
 The persons in charge of this branch are:
 Olaf Hering <[ohering@suse.com](mailto:ohering@suse.com?subject=SLE15-SP3-AZURE%20branch)>
+Kirk Allan <[kallan@suse.com](mailto:kallan@suse.com?subject=SLE15-SP3-AZURE%20branch)>
 
 It is the above person's responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
