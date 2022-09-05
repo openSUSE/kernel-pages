@@ -7,7 +7,7 @@ This is the SLE15 SP5 kernel branch.
 
 The persons in charge of this branch are:
 Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP5%20branch)>
-Yousaf Kaukab <[yousaf.kaukab@suse.com](mailto:yousaf.kaukab@suse.com?subject=SLE15-SP5%20branch)>
+Yousaf Kaukab <[ykaukab@suse.de](mailto:ykaukab@suse.de?subject=SLE15-SP5%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
