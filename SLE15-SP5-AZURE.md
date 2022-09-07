@@ -3,7 +3,7 @@ title: SLE15-SP5-AZURE branch
 redirect_from: /branches/SLE15-SP5-AZURE/
 ---
 # SLE15-SP5-AZURE
-This is the SLE 15 SP4 AZURE kernel branch.
+This is the SLE 15 SP5 AZURE kernel branch.
 
 The persons in charge of this branch are:
 Olaf Hering <[ohering@suse.com](mailto:ohering@suse.com?subject=SLE15-SP5-AZURE%20branch)>
