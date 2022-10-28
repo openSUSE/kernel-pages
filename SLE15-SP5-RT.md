@@ -3,7 +3,7 @@ title: SLE15-SP5-RT branch
 redirect_from: /branches/SLE15-SP5-RT/
 ---
 # SLE15-SP5-RT
-This is the SLE 15 SP4 RT kernel branch.
+This is the SLE 15 SP5 RT kernel branch.
 
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP5-RT%20branch)>
