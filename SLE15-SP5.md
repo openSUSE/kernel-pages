@@ -6,6 +6,7 @@ redirect_from: /branches/SLE15-SP5/
 This is the SLE15 SP5 kernel branch.
 
 The persons in charge of this branch are:
+Michal Koutny <[mkoutny@suse.com](mailto:mkoutny@suse.com?subject=SLE15-SP5%20branch)>
 Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP5%20branch)>
 Yousaf Kaukab <[ykaukab@suse.de](mailto:ykaukab@suse.de?subject=SLE15-SP5%20branch)>
 
