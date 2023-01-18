@@ -3,11 +3,14 @@ title: SLE15-SP3 branch
 redirect_from: /branches/SLE15-SP3/
 ---
 # SLE15-SP3
-This is the SLE15 SP3 kernel branch.
+This is the SLE15 SP3 LTSS kernel branch.
 
 The persons in charge of this branch are:
-Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE15-SP3%20branch)>
-Ivan Ivanov <[iivanov@suse.de](mailto:iivanov@suse.de?subject=SLE15-SP3%20branch)>
+Vasilis Liaskovitis <[vliaskovitis@suse.com](mailto:vliaskovitis@suse.com?subject=SLE15-SP3%20branch)>
+Vasant Karasulli <[vkarasulli@suse.de](mailto:vkarasulli@suse.de?subject=SLE15-SP3%20branch)>
+Ali Abdallah <[aabdallah@suse.de](mailto:aabdallah@suse.de?subject=SLE15-SP3%20branch)>
+Ales Novak <[alnovak@suse.cz](mailto:alnovak@suse.cz?subject=SLE15-SP3%20branch)>
+
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
