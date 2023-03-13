@@ -7,6 +7,7 @@ This is the SLE 12 SP5 kernel branch.
 
 The persons in charge of this branch are:
 Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE12-SP5%20branch)>
+Ivan T. Ivanov <[iivanov@suse.de](mailto:iivanov@suse.de?subject=SLE12-SP5%20branch)>
 
 It is the above person's responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
