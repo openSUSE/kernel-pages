@@ -30,8 +30,6 @@ navbar_links:
   children:
   - text: SLE15-SP5-RT
     link: SLE15-SP5-RT.html
-  - text: SLE15-SP5-GA
-    link: SLE15-SP5-GA.html
   - text: SLE15-SP5-AZURE
     link: SLE15-SP5-AZURE.html
   - text: SLE15-SP4-RT
