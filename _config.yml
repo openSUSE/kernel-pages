@@ -47,17 +47,7 @@ navbar_links:
   - text: SLE12-SP5-AZURE
     link: SLE12-SP5-AZURE.html
 - text: SLE Live Patching
-  children:
-  - text: SLE15-SP5
-    link: SLE15-SP5-lp.html
-  - text: SLE15-SP4
-    link: SLE15-SP4-lp.html
-  - text: SLE12-SP5
-    link: SLE12-SP5-lp.html
-  - text: SLE15-SP5-RT
-    link: SLE15-SP5-RT-lp.html
-  - text: SLE15-SP4-RT
-    link: SLE15-SP4-RT-lp.html
+  children: []
 footer_links:
 - text: Source Code
   link: https://github.com/openSUSE/kernel-pages
