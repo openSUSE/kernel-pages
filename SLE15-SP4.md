@@ -6,6 +6,7 @@ redirect_from: /branches/SLE15-SP4/
 This is the SLE15 SP4 kernel branch.
 
 The persons in charge of this branch are:
+Miroslav Franc <[mfranc@suse.cz](mailto:mfranc@suse.cz?subject=SLE15-SP4%20branch)>
 Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP4%20branch)>
 Vlastimil Babka <[vbabka@suse.cz](mailto:vbabka@suse.cz?subject=SLE15-SP4%20branch)>
 
