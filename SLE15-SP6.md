@@ -58,4 +58,5 @@ command:
 git clone https://github.com/openSUSE/kernel -b SLE15-SP6
 ```
 
-
+## live patches
+Sources of kernel live patch updates [SLE15-SP6_Update_0](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_0)
