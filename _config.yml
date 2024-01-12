@@ -24,8 +24,6 @@ navbar_links:
     link: SLE15-SP6.html
   - text: SLE15-SP5
     link: SLE15-SP5.html
-  - text: SLE15-SP4
-    link: SLE15-SP4.html
   - text: SLE12-SP5
     link: SLE12-SP5.html
 - text: SLE Addons
@@ -40,8 +38,6 @@ navbar_links:
     link: SLE15-SP5-AZURE.html
   - text: SLE15-SP4-RT
     link: SLE15-SP4-RT.html
-  - text: SLE15-SP4-AZURE
-    link: SLE15-SP4-AZURE.html
   - text: SLE15-SP3-RT
     link: SLE15-SP3-RT.html
   - text: SLE15-SP2-EB
@@ -56,8 +52,6 @@ navbar_links:
     link: SLE15-SP6-lp.html
   - text: SLE15-SP5
     link: SLE15-SP5-lp.html
-  - text: SLE15-SP4
-    link: SLE15-SP4-lp.html
   - text: SLE12-SP5
     link: SLE12-SP5-lp.html
   - text: SLE15-SP5-RT
