@@ -3,8 +3,6 @@ title: SLE12-SP5-AZURE branch
 redirect_from: /branches/SLE12-SP5-AZURE/
 ---
 # SLE12-SP5-AZURE
-This is the SLE 12 SP5 AZURE kernel branch.
-
 The persons in charge of this branch are:
 Olaf Hering <[ohering@suse.com](mailto:ohering@suse.com?subject=SLE12-SP5-AZURE%20branch)>
 Kirk Allan <[kallan@suse.com](mailto:kallan@suse.com?subject=SLE12-SP5-AZURE%20branch)>
