@@ -3,8 +3,6 @@ title: SLE15-SP6 branch
 redirect_from: /branches/SLE15-SP6/
 ---
 # SLE15-SP6
-This is the SLE15 SP6 kernel branch.
-
 The persons in charge of this branch are:
 Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP6%20branch)>
 Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP6%20branch)>
