@@ -13,6 +13,7 @@ Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SL
 Alexandre Vicenzi <[avicenzi@suse.de](mailto:avicenzi@suse.de?subject=SLE15-SP2-EB%20branch)>
 Radoslav Kolev <[rkolev@suse.de](mailto:rkolev@suse.de?subject=SLE15-SP2-EB%20branch)>
 Lukas Lansky <[lukas.lansky@suse.com](mailto:lukas.lansky@suse.com?subject=SLE15-SP2-EB%20branch)>
+Christian Hueller <[chuller@suse.com](mailto:chuller@suse.com?subject=SLE15-SP2-EB%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
