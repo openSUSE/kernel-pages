@@ -3,8 +3,6 @@ title: SLE15-SP4-RT-LTSS branch
 redirect_from: /branches/SLE15-SP4-RT-LTSS/
 ---
 # SLE15-SP4-RT-LTSS
-This is the SLE 15 SP4 RT kernel branch.
-
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP4-RT-LTSS%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP4-RT-LTSS%20branch)>
