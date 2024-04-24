@@ -3,8 +3,6 @@ title: SLE15-SP6-RT branch
 redirect_from: /branches/SLE15-SP6-RT/
 ---
 # SLE15-SP6-RT
-This is the SLE15 SP6 RT kernel branch.
-
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP6-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP6-RT%20branch)>
