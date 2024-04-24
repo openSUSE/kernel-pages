@@ -3,8 +3,6 @@ title: SLE12-SP5-RT branch
 redirect_from: /branches/SLE12-SP5-RT/
 ---
 # SLE12-SP5-RT
-This is the SLE 12 SP5 RT kernel branch.
-
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE12-SP5-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE12-SP5-RT%20branch)>
