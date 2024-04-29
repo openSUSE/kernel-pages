@@ -6,7 +6,7 @@ redirect_from: /branches/SLE15-SP5-RT/
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP5-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP5-RT%20branch)>
-Petr Tesarik <[petr@tesarici.cz](mailto:petr@tesarici.cz?subject=SLE15-SP5-RT%20branch)>
+Petr Tesarik <[ptesarik@suse.com](mailto:ptesarik@suse.com?subject=SLE15-SP5-RT%20branch)>
 Jeffrey Cheung <[jcheung@suse.com](mailto:jcheung@suse.com?subject=SLE15-SP5-RT%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
