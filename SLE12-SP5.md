@@ -3,8 +3,6 @@ title: SLE12-SP5 branch
 redirect_from: /branches/SLE12-SP5/
 ---
 # SLE12-SP5
-This is the SLE 12 SP5 kernel branch.
-
 The persons in charge of this branch are:
 Denis Kirjanov <[dkirjanov@suse.com](mailto:dkirjanov@suse.com?subject=SLE12-SP5%20branch)>
 Ivan T. Ivanov <[iivanov@suse.de](mailto:iivanov@suse.de?subject=SLE12-SP5%20branch)>
