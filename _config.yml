@@ -32,6 +32,8 @@ navbar_links:
     link: SLE15-SP6-RT-GA.html
   - text: SLE15-SP6-RT
     link: SLE15-SP6-RT.html
+  - text: SLE15-SP6-COCO
+    link: SLE15-SP6-COCO.html
   - text: SLE15-SP6-AZURE
     link: SLE15-SP6-AZURE.html
   - text: SLE15-SP5-RT
