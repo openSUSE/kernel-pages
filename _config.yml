@@ -18,6 +18,12 @@ navbar_links:
     link: linux-next.html
   - text: vanilla
     link: vanilla.html
+- text: SLFO
+  children:
+  - text: ALP-current
+    link: ALP-current.html
+  - text: ALP-current-RT
+    link: ALP-current-RT.html
 - text: SLE
   children:
   - text: SLE15-SP6
