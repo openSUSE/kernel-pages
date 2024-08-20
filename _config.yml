@@ -36,6 +36,8 @@ navbar_links:
     link: SLE12-SP5.html
 - text: SLE Addons
   children:
+  - text: SLE15-SP7-RT
+    link: SLE15-SP7-RT.html
   - text: SLE15-SP6-RT
     link: SLE15-SP6-RT.html
   - text: SLE15-SP6-COCO
