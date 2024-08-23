@@ -5,6 +5,7 @@ redirect_from: /branches/SLE15-SP6-RT/
 # SLE15-SP6-RT
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SLE15-SP6-RT%20branch)>
+Petr Tesarik <[petesarik@suse.de](mailto:petesarik@suse.de?subject=SLE15-SP6-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SLE15-SP6-RT%20branch)>
 Jeffrey Cheung <[jcheung@suse.com](mailto:jcheung@suse.com?subject=SLE15-SP6-RT%20branch)>
 
