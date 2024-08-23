@@ -5,8 +5,8 @@ redirect_from: /branches/SLE15-SP7/
 # SLE15-SP7
 The persons in charge of this branch are:
 Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP7%20branch)>
-Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP7%20branch)>
 Tony Jones <[tonyj@suse.de](mailto:tonyj@suse.de?subject=SLE15-SP7%20branch)>
+Juergen Gross <[jgross@suse.com](mailto:jgross@suse.com?subject=SLE15-SP7%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
