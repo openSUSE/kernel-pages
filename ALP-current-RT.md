@@ -5,6 +5,7 @@ redirect_from: /branches/ALP-current-RT/
 # ALP-current-RT
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=ALP-current-RT%20branch)>
+Petr Tesarik <[petesarik@suse.de](mailto:petesarik@suse.de?subject=ALP-current-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=ALP-current-RT%20branch)>
 Yousaf Kaukab <[ykaukab@suse.de](mailto:ykaukab@suse.de?subject=ALP-current-RT%20branch)>
 
