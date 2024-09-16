@@ -5,8 +5,8 @@ title: Live Patches for SLE15-SP6 branch
 This is the live patches repository.
 
 The persons in charge of the repository are:
-Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=SLE15-SP6_Update_4%20branch)>
-Nicolai Stange <[nstange@suse.de](mailto:nstange@suse.de?subject=SLE15-SP6_Update_4%20branch)>
+Miroslav Benes <[mbenes@suse.cz](mailto:mbenes@suse.cz?subject=SLE15-SP6_Update_5%20branch)>
+Nicolai Stange <[nstange@suse.de](mailto:nstange@suse.de?subject=SLE15-SP6_Update_5%20branch)>
 
 The repository contains live patches for security vulnerabilities,
 stability and data corruption bug fixes. It is the persons'
@@ -24,4 +24,4 @@ above mentioned maintainers.
 
 
 ## live patches
-Sources of kernel live patch updates [SLE15-SP6_Update_4](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_4) [SLE15-SP6_Update_3](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_3) [SLE15-SP6_Update_2](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_2) [SLE15-SP6_Update_1](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_1) [SLE15-SP6_Update_0](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_0)
+Sources of kernel live patch updates [SLE15-SP6_Update_5](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_5) [SLE15-SP6_Update_4](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_4) [SLE15-SP6_Update_3](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_3) [SLE15-SP6_Update_2](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_2) [SLE15-SP6_Update_1](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_1) [SLE15-SP6_Update_0](https://github.com/SUSE/kernel-livepatch/tree/SLE15-SP6_Update_0)
