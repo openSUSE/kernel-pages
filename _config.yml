@@ -20,10 +20,10 @@ navbar_links:
     link: vanilla.html
 - text: SLFO
   children:
-  - text: ALP-current
-    link: ALP-current.html
-  - text: ALP-current-RT
-    link: ALP-current-RT.html
+  - text: SUSE-2024
+    link: SUSE-2024.html
+  - text: SUSE-2024-RT
+    link: SUSE-2024-RT.html
 - text: SLE
   children:
   - text: SLE15-SP7
