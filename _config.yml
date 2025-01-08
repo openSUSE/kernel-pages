@@ -46,8 +46,6 @@ navbar_links:
     link: SLE15-SP6-AZURE.html
   - text: SLE15-SP5-RT-LTSS
     link: SLE15-SP5-RT-LTSS.html
-  - text: SLE15-SP5-LTSS
-    link: SLE15-SP5-LTSS.html
   - text: SLE15-SP4-RT-LTSS
     link: SLE15-SP4-RT-LTSS.html
   - text: SLE15-SP3-RT-LTSS
