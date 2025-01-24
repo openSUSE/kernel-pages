@@ -50,8 +50,6 @@ navbar_links:
     link: SLE15-SP4-RT-LTSS.html
   - text: SLE15-SP3-RT-LTSS
     link: SLE15-SP3-RT-LTSS.html
-  - text: SLE15-SP2-EB
-    link: SLE15-SP2-EB.html
 - text: SLE Live Patching
   children:
   - text: SLE15-SP7
