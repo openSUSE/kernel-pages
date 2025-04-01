@@ -3,11 +3,8 @@ title: SUSE-2024-RT branch
 redirect_from: /branches/SUSE-2024-RT/
 ---
 # SUSE-2024-RT
-<[<<<<<< HEAD
 The persons in charge of this branch are:
-Mel Gorman <mgorman@suse.de](mailto:<<<<<< HEAD
-The persons in charge of this branch are:
-Mel Gorman <mgorman@suse.de?subject=SUSE-2024-RT%20branch)>
+Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SUSE-2024-RT%20branch)>
 Petr Tesarik <[petesarik@suse.de](mailto:petesarik@suse.de?subject=SUSE-2024-RT%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SUSE-2024-RT%20branch)>
 Yousaf Kaukab <[ykaukab@suse.de](mailto:ykaukab@suse.de?subject=SUSE-2024-RT%20branch)>
