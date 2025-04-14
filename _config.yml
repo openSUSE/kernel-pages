@@ -20,8 +20,8 @@ navbar_links:
     link: vanilla.html
 - text: SUSE Linux 16
   children:
-  - text: SUSE-2025
-    link: SUSE-2025.html
+  - text: SL-16.0
+    link: SL-16.0.html
   - text: SUSE-2024
     link: SUSE-2024.html
 - text: SUSE Linux 16 Addons
