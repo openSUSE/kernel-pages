@@ -26,6 +26,8 @@ navbar_links:
     link: SUSE-2024.html
 - text: SUSE Linux 16 Addons
   children:
+  - text: SL-16.0-AZURE
+    link: SL-16.0-AZURE.html
   - text: SUSE-2024-RT
     link: SUSE-2024-RT.html
 - text: SLE
