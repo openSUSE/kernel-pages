@@ -64,6 +64,8 @@ navbar_links:
     link: SLE15-SP7-lp.html
   - text: SLE15-SP6
     link: SLE15-SP6-lp.html
+  - text: SLE15-SP7-RT
+    link: SLE15-SP7-RT-lp.html
   - text: SLE15-SP6-RT
     link: SLE15-SP6-RT-lp.html
 footer_links:
