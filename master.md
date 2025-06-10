@@ -13,7 +13,7 @@ openSUSE Factory.
 The person in charge of this branch is:
 Jeff Mahoney <[jeffm@suse.com](mailto:jeffm@suse.com?subject=master%20branch)>
 Michal Kubecek <[mkubecek@suse.com](mailto:mkubecek@suse.com?subject=master%20branch)>
-Pedro Falcato <[pedro.falcato@suse.com](mailto:pedro.falcato@suse.com?subject=master%20branch)>
+Pedro Falcato <[pfalcato@suse.de](mailto:pfalcato@suse.de?subject=master%20branch)>
 
 It is the above person's responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
