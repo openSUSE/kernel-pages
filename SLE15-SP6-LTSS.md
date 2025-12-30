@@ -4,9 +4,9 @@ redirect_from: /branches/SLE15-SP6-LTSS/
 ---
 # SLE15-SP6-LTSS
 The persons in charge of this branch are:
-Takashi Iwai <[tiwai@suse.de](mailto:tiwai@suse.de?subject=SLE15-SP6-LTSS%20branch)>
-Oscar Salvador <[osalvador@suse.de](mailto:osalvador@suse.de?subject=SLE15-SP6-LTSS%20branch)>
-Tony Jones <[tonyj@suse.de](mailto:tonyj@suse.de?subject=SLE15-SP6-LTSS%20branch)>
+Tom Abraham <[tabraham@suse.com](mailto:tabraham@suse.com?subject=SLE15-SP6-LTSS%20branch)>
+Jean Delvare <[jdelvare@suse.de](mailto:jdelvare@suse.de?subject=SLE15-SP6-LTSS%20branch)>
+Ali Abdallah <[aabdallah@suse.de](mailto:aabdallah@suse.de?subject=SLE15-SP6-LTSS%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
