@@ -4,10 +4,10 @@ redirect_from: /branches/SUSE-2024-RT/
 ---
 # SUSE-2024-RT
 The persons in charge of this branch are:
-Mel Gorman <[mgorman@suse.de](mailto:mgorman@suse.de?subject=SUSE-2024-RT%20branch)>
-Petr Tesarik <[petesarik@suse.de](mailto:petesarik@suse.de?subject=SUSE-2024-RT%20branch)>
-Frederic Weisbecker <[fweisbecker@suse.de](mailto:fweisbecker@suse.de?subject=SUSE-2024-RT%20branch)>
-Yousaf Kaukab <[ykaukab@suse.de](mailto:ykaukab@suse.de?subject=SUSE-2024-RT%20branch)>
+Mel Gorman <[mgorman@suse.com](mailto:mgorman@suse.com?subject=SUSE-2024-RT%20branch)>
+Petr Tesarik <[ptesarik@suse.com](mailto:ptesarik@suse.com?subject=SUSE-2024-RT%20branch)>
+Frederic Weisbecker <[fweisbecker@suse.com](mailto:fweisbecker@suse.com?subject=SUSE-2024-RT%20branch)>
+Yousaf Kaukab <[yousaf.kaukab@suse.com](mailto:yousaf.kaukab@suse.com?subject=SUSE-2024-RT%20branch)>
 
 It is the above person's responsiblity for checking in this kernel to
 the build system, anyone else who wishes to do so, needs to get
