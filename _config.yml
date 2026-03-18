@@ -36,6 +36,8 @@ navbar_links:
   children:
   - text: SLE15-SP7
     link: SLE15-SP7.html
+  - text: SLE12-SP5
+    link: SLE12-SP5.html
 - text: SLE Addons
   children:
   - text: SLE15-SP7-RT
@@ -46,14 +48,24 @@ navbar_links:
     link: SLE15-SP6-LTSS.html
   - text: SLE15-SP5-RT-LTSS
     link: SLE15-SP5-RT-LTSS.html
+  - text: SLE15-SP5-LTSS
+    link: SLE15-SP5-LTSS.html
   - text: SLE15-SP4-RT-LTSS
     link: SLE15-SP4-RT-LTSS.html
+  - text: SLE15-SP4-LTSS
+    link: SLE15-SP4-LTSS.html
   - text: SLE15-SP3-RT-LTSS
     link: SLE15-SP3-RT-LTSS.html
+  - text: SLE15-SP3-LTSS
+    link: SLE15-SP3-LTSS.html
+  - text: SLE11-SP4-LTSS
+    link: SLE11-SP4-LTSS.html
 - text: SLE Live Patching
   children:
   - text: SLE15-SP7
     link: SLE15-SP7-lp.html
+  - text: SLE12-SP5
+    link: SLE12-SP5-lp.html
   - text: SLE15-SP7-RT
     link: SLE15-SP7-RT-lp.html
 footer_links:
