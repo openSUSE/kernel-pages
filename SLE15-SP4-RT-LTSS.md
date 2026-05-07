@@ -6,6 +6,7 @@ redirect_from: /branches/SLE15-SP4-RT-LTSS/
 The persons in charge of this branch are:
 Mel Gorman <[mgorman@suse.com](mailto:mgorman@suse.com?subject=SLE15-SP4-RT-LTSS%20branch)>
 Frederic Weisbecker <[fweisbecker@suse.com](mailto:fweisbecker@suse.com?subject=SLE15-SP4-RT-LTSS%20branch)>
+Petr Tesarik <[ptesarik@suse.com](mailto:ptesarik@suse.com?subject=SLE15-SP4-RT-LTSS%20branch)>
 Jeffrey Cheung <[jcheung@suse.com](mailto:jcheung@suse.com?subject=SLE15-SP4-RT-LTSS%20branch)>
 
 It is the above persons' responsiblity for checking in this kernel to
