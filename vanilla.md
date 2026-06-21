@@ -22,7 +22,7 @@ from this branch run
 ```
 zypper ar -f https://download.opensuse.org/repositories/Kernel:/vanilla/standard \
     Kernel:vanilla
-zypper in --from Kernel:vanilla kernel-default
+zypper in --from Kernel:vanilla kernel-vanilla
 ```
 
 Please note: The packages are built for the distribution they are
